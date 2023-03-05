@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-padding-top: 1rem;
+            scroll-behavior: smooth;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f6f6f6;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 80px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #d90429;;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav container">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <a href="#" class="logo">Auto Gallery <span>by Qambarli</span></a>
+            <ul class="navbar">
+                <li><a href="#home" class="active">Əsas Səhifə</a></li>
+                <li><a href="#login" target="_blank">Qeydiyyat</a></li>
+                <li><a href="#cars">Avtomobillər</a></li>
+                <li><a href="#about">Haqqında</a></li>
+                <li><a href="#parts">Hissələr</a></li>
+                <li><a href="#blog">blog</a></li>
+            </ul>
+        </div>
+    </header>
+    <form id="myForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+        <label for="age">Country:</label>
+        <input type="text" id="country" name="country"><br><br>
+        <label for="age">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <input type="submit" value="Sign up" onclick="myFunction()">
+    </form>
+    <script>
+
+        function myFunction(){
+            let firstname = document.getElementById('fisrtName').value;
+            let lastname = document.getElementById('lastName').value;
+            let country = document.getElementById('country').value;
+            let birthday = document.getElementById('birthday').value;
+
+            localStorage.setItem = firstname;
+            localStorage.setItem = lastname;
+            localStorage.setItem = country;
+            localStorage.setItem = birthday;
+        }
+    </script>
+</body>
+
+</html>
